@@ -1,0 +1,236 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+  }
+  
+  .container {
+    max-width: 960px;
+  }
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 999;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar-toggler {
+    display: none;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin-left: 20px;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ffc107;
+  }
+  
+  #hero {
+    padding: 100px 0;
+    text-align: center;
+    background-image: url('./earth-background-zacpfaduv7nohfh7.jpg');
+    background-size: cover;
+    color: #fff;
+  }
+
+ 
+  
+  .rainbow {
+    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    background-clip: text;
+    color: transparent;
+  }
+
+ 
+  
+  #about {
+    padding: 80px 0;
+    background-image: url('./minions-3wxim1i2egqb5my9.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    margin-top: 20px; /* Adjust the margin-top value as needed */
+   
+  }
+  
+  #projects {
+    padding: 80px 0;
+    background-image: linear-gradient(120deg, #f093fb, #f5576c);
+
+  }
+  
+  .project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between the cards as needed */
+  }
+  
+  .project-card {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #e74c3c;
+    margin: 10px;
+    text-align: center;
+    transition: border-color 0.3s ease;
+  }
+  
+  .project-card:hover {
+    border-color: #2ecc71;
+  }
+  
+  
+  .project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Add more styles to the project card content if desired */
+  
+  /* Random border colors for each project card */
+  .project-card:nth-child(1) {
+    border: 2px solid #FEDCBA; /* Random color 1 */
+  }
+  
+  .project-card:nth-child(2) {
+    border: 2px solid #987654; /* Random color 2 */
+  }
+  
+  .project-card:nth-child(3) {
+    border: 2
+  }
+  
+  /* Add more styles to the project card content if desired */
+  
+  
+  #contact {
+    padding: 80px 0;
+  }
+  /* Add the rest of your existing CSS styles here */
+
+/* ... */
+
+#contact {
+    background-color: #f8f8f8; /* Corresponding background color */
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .icon-link {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .icon-link:hover {
+    color: #ffc107;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer p {
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  
+  /* Media queries for responsive design */
+  @media (max-width: 768px) {
+    .navbar-toggler {
+      display: block;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+  
+    .navbar-toggler-icon {
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+      position: relative;
+      transform: rotate(0);
+      transition: transform 0.3s ease;
+    }
+  
+    .navbar-collapse {
+      display: none;
+    }
+  
+    .navbar-collapse.show {
+      display: block;
+    }
+  
+    .navbar-collapse.show .nav-item {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  
+    .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+      transform: rotate(90deg);
+    }
+  }
+  
+  
