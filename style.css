@@ -36,16 +36,27 @@
     font-weight: bold;
     color: #fff;
     text-decoration: none;
+    margin-right: auto
+    
+  
   }
   
   .navbar-toggler {
     display: none;
   }
   
+  .navbar-toggler.active .navbar-toggler-icon {
+    background-image: url('https://fontawesome.com/icons/burger?f=sharp&s=solid'); /* Replace with your close icon */
+  }
+  
   .navbar-nav {
     list-style: none;
-    display: flex;
     align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
   
   .nav-item {
@@ -63,36 +74,67 @@
   }
   
   #hero {
-    padding: 100px 0;
+    padding: 0px 0;
     text-align: center;
-    background-image: url('./earth-background-zacpfaduv7nohfh7.jpg');
-    background-size: cover;
-    color: #fff;
-  }
-
- 
-  
-  .rainbow {
-    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
-    background-clip: text;
-    color: transparent;
-  }
-
- 
-  
-  #about {
-    padding: 80px 0;
-    background-image: url('./minions-3wxim1i2egqb5my9.jpg');
+    background-image: url(./earth-background-zacpfaduv7nohfh7.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: #fff;
-    margin-top: 20px; /* Adjust the margin-top value as needed */
+    margin-top: 60px;
+    margin-bottom: 0px;
+    height: 50vh;
+  }
+  .rainbow {
+    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    background-clip: text;
+    -webkit-background-clip: text; /* For Safari */
+    color: transparent;
+    animation: bounce 1s infinite;
+  }
+
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  .zoom-animation {
+    animation: zoomInOut 0.5s infinite alternate;
+  }
+  
+  @keyframes zoomInOut {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+ 
+  
+  #about {
+    padding: 0px 0;
+    background-image: url('./minions-3wxim1i2egqb5my9.jpg');
+    background-size: cover;
+    background-position: inherit;
+    width: 100%;
+    height: 60vh;
+    background-repeat: no-repeat;
+    color: #000;
+    margin-top: 0; /* Adjust the margin-top value as needed */
+    
+   
+    
    
   }
   
   #projects {
-    padding: 80px 0;
+    padding-top: 0px;
+    padding-bottom: 1px;
     background-image: linear-gradient(120deg, #f093fb, #f5576c);
 
   }
@@ -125,7 +167,7 @@
     object-fit: cover;
   }
   
-  /* Add more styles to the project card content if desired */
+  /* Add more styles to the projects */
   
   /* Random border colors for each project card */
   .project-card:nth-child(1) {
@@ -140,21 +182,22 @@
     border: 2
   }
   
-  /* Add more styles to the project card content if desired */
+  /* Add more styles to the project*/
   
   
-  #contact {
-    padding: 80px 0;
-  }
+
   /* Add the rest of your existing CSS styles here */
 
 /* ... */
 
 #contact {
-    background-color: #f8f8f8; /* Corresponding background color */
-    padding: 80px 0;
+    background-color: #797777; /* Corresponding background color */
+    padding: 5px 5px;
     text-align: center;
   }
+section#contact {
+   background-image: radial-gradient(rgba(66, 63, 66, 0.333));
+}
   
   .social-icons {
     display: flex;
@@ -173,7 +216,19 @@
   .icon-link:hover {
     color: #ffc107;
   }
+  icon-link:hover {
+    color: #007bff;
+    animation: glow 1s infinite alternate;
+  }
   
+  @keyframes glow {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.7;
+    }
+  }
   footer {
     background-color: #333;
     color: #fff;
@@ -233,4 +288,30 @@
     }
   }
   
+  @media (max-width: 768px) {
+    /* Styles for screens smaller than 768px */
+    /* Adjust the styles as needed */
+    .navbar-toggler {
+      display: block;
+    }
+    
+    .navbar-collapse {
+      display: none;
+    }
+    
+    .navbar-collapse.show {
+      display: block;
+    }
+    
+    .nav-item {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    
+    .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+      transform: rotate(90deg);
+    }
+    
+    /* Add more styles for smaller screens */
+  }
   

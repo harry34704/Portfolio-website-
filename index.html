@@ -6,8 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Harry Munyai">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/c932d6e954.js" crossorigin="anonymous"></script>
+  <meta name="keywords" content="Harry Munyai, web developer, portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="Harry Munyai, web developer, portfolio">
   <meta name="description" content="Welcome to Harry Munyai's Portfolio. A full stack developer passionate about coding.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="style.css">
   <title>Harry Munyai - Portfolio</title>
 </head>
@@ -16,38 +21,40 @@
 
   <!-- Header section -->
   <header>
-    <nav class="navbar">
-      <div class="container">
-        <a class="navbar-brand" href="#">Harry Munyai</a>
-        <button class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-<!-- Hero section -->
-  <section id="hero">
+  <nav class="navbar">
     <div class="container">
-      <h1 class="rainbow">Welcome to my Portfolio</h1>
-      <h2>I'm Harry Munyai, a Full Stack Developer</h2>
-      <p>I have more than 6 months of experience in web development. I am passionate about coding and continuously learning and improving my skills.</p>
-      <p>Explore my projects below and feel free to get in touch!</p>
+      <a class="navbar-brand" href="#">Harry Munyai</a>
+      <button class="navbar-toggler" type="button" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-sharp fa-solid fa-burger"></i>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </section>
+  </nav>
+</header>
+
+<!-- Hero section -->
+<section id="hero">
+  <div class="container">
+    <h1 class="rainbow" id="welcomeText">Welcome to my Portfolio</h1>
+    <h2 class="rainbow" id="developerText">I'm Harry Munyai, a Full Stack Developer</h2>
+    <p>I have more than 6 months of experience in web development. I am passionate about coding and continuously learning and improving my skills.</p>
+    <p>Explore my projects below and feel free to get in touch!</p>
+  </div>
+</section>
+
 <!-- About section -->
   <section id="about">
     <div class="container">
@@ -57,49 +64,57 @@
     </div>
   </section>
  <!-- Projects section -->
+
+ <!--Prject 1-->
   <section id="projects">
     <div class="animation-bg"></div>
     <div class="container">
       <h2>My Projects</h2>
       <div class="project-card">
-        <a href="project1-link" target="_blank">
-          <img src="project1-image.jpg" alt="Project 1">
+        <a href="./javaScript-calculator/index.html" target="_blank">
+          <img src="./img/calculator2.png" alt="Project 1">
         </a>
       </div>
-      <div class="project-card" placeholder="Coming SOON">
-        <a href="project2-link" target="_blank">
-          <img src="project2-image.jpg" alt="Project 2">
+      <!--Prject 2-->
+      <div class="project-card">
+        <a href="./my-color-changer-project/index.html" target="_blank">
+          <img src="./img/Color-flipper.jpeg" alt="Project 2">
         </a>
       </div>
-      <!-- Add more project cards here -->
+      <!-- Project 3 -->
       <div class="project-card">
         <a href="project10-link" target="_blank">
-          <img src="project10-image.jpg" alt="Project 10">
+          <img src="./img/massage-sender.jpeg" alt="Project 3">
         </a>
       </div>
+      <!--Prject 4-->
       <div class="project-card">
         <a href="project11-link" target="_blank">
-          <img src="project11-image.jpg" alt="Project 11">
+          <img src="./img/web1.jpg" alt="Project 4">
         </a>
       </div>
+      <!--Prject 5-->
       <div class="project-card">
         <a href="project12-link" target="_blank">
-          <img src="project12-image.jpg" alt="Project 12">
+          <img src="./img/web2.jpg" alt="Project 5">
         </a>
       </div>
+      <!--Prject 6-->
       <div class="project-card">
         <a href="project13-link" target="_blank">
-          <img src="project13-image.jpg" alt="Project 13">
+          <img src="./img/web3.jpg" alt="Project 6">
         </a>
       </div>
+      <!--Prject 7-->
       <div class="project-card">
         <a href="project14-link" target="_blank">
-          <img src="project14-image.jpg" alt="Project 14">
+          <img src="./img/web3.jpg" alt="Project 7">
         </a>
       </div>
+      <!--Prject 8-->
       <div class="project-card">
         <a href="project15-link" target="_blank">
-          <img src="project15-image.jpg" alt="Project 15">
+          <img src="./img/web3.jpg" alt="Project 8">
         </a>
       </div>
     </div>
@@ -120,11 +135,11 @@
   <footer>
     <div class="container">
       <p>&copy; 2023 Harry Munyai</p>
-      <p>Contact me at <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+      <p>Contact me at <a href="mailto:harry34704@outlook.com">harry34704@outlook.com</a></p>
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
